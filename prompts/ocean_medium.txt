@@ -1,0 +1,8 @@
+Scene:
+Inside a sprawling futuristic underwater research base anchored deep in the Pacific trench. The walls are transparent composite glass, showing vast bioluminescent organisms drifting outside. Engineers and scientists move with precision inside softly lit corridors, their suits reflecting a gentle cyan glow. Monitors display biological data, energy levels, and sonar scans of the ocean floor.
+
+Camera:
+The camera begins with a wide establishing shot from the exterior, showing the entire base silhouetted against the abyss. It then glides forward through an airlock, transitioning seamlessly into the main habitat dome. A slow dolly follows the lead scientist as they walk past control stations before stopping near a massive viewing window filled with glowing jellyfish.
+
+Style:
+Cinematic lighting, soft volumetric rays, floating dust particles in water. Subtle motion parallax gives depth. Colour palette: aqua, cyan, and silver tones. 4 K resolution, 30 fps, shallow depth of field. Mood is calm, mysterious, and awe-inspiring — capturing the intersection of science and nature.

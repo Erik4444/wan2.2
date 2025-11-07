@@ -1,0 +1,14 @@
+Scene Description:
+A grand futuristic starship bridge modeled after the USS Enterprise, merging corporate professionalism with visionary design. The command deck glows in soft ambient hues of blue, silver, and white. Transparent holographic panels hover mid-air, displaying mission dashboards, galactic trade routes, and organizational analytics. Crew members in minimalist navy uniforms coordinate calmly, each station framed by sleek metallic arcs and subtle reflections from the polished floor. Beyond the vast front viewport, a nebula drifts past in muted magentas and cyan tones, distant stars shimmering across the void.
+
+Camera and Motion:
+The camera begins outside the starship, slowly pushing through the glass viewport into the command center. A wide cinematic sweep reveals the helm consoles and the captain’s chair, framed in soft volumetric light. The movement transitions into a steady dolly around the circular bridge as the captain gestures toward a holographic star chart that expands dynamically. Secondary cameras cut to close-ups of hands interacting with floating UI elements, before one final wide crane shot reveals the coordinated bridge team beneath the glow of the nebula beyond.
+
+Style and Visual Tone:
+Render in cinematic quality, 35 mm lens depth, clean high-resolution (4 K / 30 fps). Use subtle bloom, crisp reflections, and shallow depth of field to emphasize hierarchy of focus. Teal and silver color grade, low contrast background, professional futuristic atmosphere — calm, elegant, believable. Textures should remain smooth and premium, suggesting advanced materials and silent technology. Avoid battle scars, clutter, or excessive HUD overlays. The lighting should project quiet authority, like a futuristic boardroom in orbit.
+
+Mood and Theme:
+This is a scene of innovation, unity, and leadership — not conflict. It conveys exploration as metaphor for enterprise growth and collaboration across galaxies. The crew represents a forward-thinking organization operating at the edge of discovery, guided by precision, trust, and vision. The result should feel inspirational and aspirational, suitable for a cinematic opening sequence in an executive presentation or investor showcase.
+
+Negative Prompts:
+no explosions, no weapons, no chaotic movement, no cartoon lighting, no visible text labels, no logos except a subtle watermark in the corner.

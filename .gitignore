@@ -1,0 +1,56 @@
+.DS_Store
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+*.egg
+*.whl
+
+# Virtualenvs
+.venv/
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Model weights and caches
+models/
+weights/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.index.json
+
+# Hugging Face / transformer caches
+.cache/
+.cache/huggingface/
+.cache/huggingface/transformers/
+.huggingface/
+huggingface_hub/
+transformers_cache/
+
+# Environment files
+*.env
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
