@@ -19,7 +19,7 @@ GUIDE_SCALE="7.5"
 NAME=""
 T5_CPU="false"
 OFFLOAD_MODEL="true"
-CKPT_DIR="./models"
+CKPT_DIR="./models/Wan2.2-TI2V-5B"
 TASK="ti2v-5B"
 
 while [[ $# -gt 0 ]]; do
