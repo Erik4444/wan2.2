@@ -112,6 +112,7 @@ PY_ARGS=(
 [[ "$OFFLOAD_MODEL" == "true" ]] && PY_ARGS+=( --offload_model True )
 [[ "$T5_CPU" == "true" ]] && PY_ARGS+=( --t5_cpu )
 
+mkdir -p ./outputs
 python "${PY_ARGS[@]}"
 
 echo "✅ Done. Saved to: $SAVE_FILE"
