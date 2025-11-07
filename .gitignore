@@ -13,7 +13,8 @@ eggs/
 parts/
 *.egg
 *.whl
-wan2.2
+wan2.2/
+Wan2.2-TI2V-5B/
 
 # Virtualenvs
 .venv/
@@ -34,7 +35,6 @@ prompts/
 
 # Model weights and caches
 models/
-Wan2.2-TI2V-5B/
 weights/
 *.ckpt
 *.pt

@@ -1,6 +1,6 @@
 # WAN repository
 
-This repository contains a small project scaffold and helper scripts. This README explains how to download a model (prefetch/snapshot), create and activate a Python virtual environment, and install required packages.
+This repository contains a small project scaffold and helper scripts. This README explains how to download a model, create and activate a Python virtual environment, and install required packages.
 
 ## Quick overview
 
@@ -43,9 +43,6 @@ pip install -r requirements.txt
 ```
 
 ## Download the model
-
-Option A — Hugging Face CLI (login + repo download)
-
 1. Install the CLI and log in (this stores your credentials locally):
 
 ```bash
@@ -56,9 +53,7 @@ huggingface-cli login
 2. Download the model repository:
 
 ```bash
-# some hf hub versions support a repo clone helper
 huggingface-cli download Wan-AI/Wan2.2-TI2V-5B --local-dir ./Wan2.2-TI2V-5B
-
 ```
 
 ## Wan2.2 repository and running the generator
@@ -72,7 +67,7 @@ This project expects a separate repo (Wan2.2) that contains the code to generate
 git clone https://github.com/Wan-Video/Wan2.2.git wan2.2
 ```
 
-2. Install Wan2.2's Python requirements (assumes it has a `requirements.txt`):
+2. Install Wan2.2's Python requirements:
 
 ```bash
 source .venv/bin/activate
@@ -81,7 +76,7 @@ pip install -r wan2.2/requirements.txt
 
 3. Confirm the model path and configuration inside `wan2.2` or `run-t2v.sh`:
 
-- `run-t2v.sh` expects `generate.py` inside the Wan2.2 repo and will call it to render/generate videos. Open `run-t2v.sh` and update any MODEL_PATH or REPO_DIR variables to point to the downloaded model (for example `models/<MODEL_ID>`) and the Wan2.2 directory.
+- `run-t2v.sh` expects `generate.py` inside the Wan2.2 repo and will call it to render/generate videos. Open `run-t2v.sh` and update any MODEL_PATH or REPO_DIR variables to point to the downloaded model and the Wan2.2 directory. It should work out of the box.
 
 4. Run the wrapper script to generate videos:
 
