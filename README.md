@@ -19,14 +19,13 @@ cd wan
 2. Create and activate a virtual environment (recommended):
 
 ```bash
-python3 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
 ```
 
 3. Install Python requirements:
 
 ```bash
-pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
@@ -37,7 +36,7 @@ Option A — Hugging Face CLI (login + repo download)
 1. Install the CLI and log in (this stores your credentials locally):
 
 ```bash
-pip install --upgrade huggingface-hub
+pip install huggingface-hub
 huggingface-cli login
 ```
 
@@ -50,7 +49,7 @@ huggingface-cli login
 mkdir -p models
 cd models
 # Clone the model repository (requires git-lfs for large files)
-git clone https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B Wan2.2-TI2V-5B
+git clone https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 cd -
 ```
 
@@ -96,7 +95,7 @@ This project expects a separate repo (Wan2.2) that contains the code to generate
 
 ```bash
 # from the repository root
-git clone <wan2.2-repo-url> wan2.2
+git clone https://github.com/Wan-Video/Wan2.2.git wan2.2
 ```
 
 2. Install Wan2.2's Python requirements (assumes it has a `requirements.txt`):

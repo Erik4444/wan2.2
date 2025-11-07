@@ -97,7 +97,7 @@ echo "▶ Prompt length:   ${#PROMPT} chars"
 
 ### -------- RUN --------
 PY_ARGS=(
-  ./generate.py
+  ./wan2.2/generate.py
   --task "$TASK"
   --size "$SIZE"
   --sample_guide_scale "$GUIDE_SCALE"
