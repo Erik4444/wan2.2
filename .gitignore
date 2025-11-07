@@ -27,6 +27,10 @@ ENV/
 
 # Logs
 *.log
+logs/
+
+outputs/
+
 
 # Model weights and caches
 models/
