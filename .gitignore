@@ -13,6 +13,7 @@ eggs/
 parts/
 *.egg
 *.whl
+wan2.2
 
 # Virtualenvs
 .venv/
