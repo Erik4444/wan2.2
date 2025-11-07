@@ -53,52 +53,13 @@ pip install huggingface-hub
 huggingface-cli login
 ```
 
-2. Download the model repository. Two common methods:
-
-- Use `git` to clone the model repo (recommended if you already have `git-lfs` set up):
-
-```bash
-# Make a folder for models
-mkdir -p models
-cd models
-# Clone the model repository (requires git-lfs for large files)
-git clone https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
-cd -
-```
-
-- Or use the HF CLI repo helpers (if available in your huggingface-hub version):
+2. Download the model repository:
 
 ```bash
 # some hf hub versions support a repo clone helper
-huggingface-cli repo clone Wan-AI/Wan2.2-TI2V-5B models/Wan2.2-TI2V-5B
+huggingface-cli download Wan-AI/Wan2.2-TI2V-5B --local-dir ./Wan2.2-TI2V-5B
+
 ```
-
-Notes about Git LFS and large files:
-- Many model repositories store large binary files via Git LFS. Install Git LFS before cloning large models:
-
-```bash
-brew install git-lfs
-git lfs install
-```
-
-- If you can't use Git LFS or cloning fails, use the Python `snapshot_download` method in Option B below.
-
-Option B — Python: `huggingface_hub.snapshot_download` (reliable, supports tokens)
-
-```bash
-python - <<'PY'
-from huggingface_hub import snapshot_download
-
-MODEL_ID = "<MODEL_ID>"  # e.g. "Wan-AI/Wan2.2-TI2V-5B"
-# If the model is private, first run `huggingface-cli login` (above), or set HF_TOKEN environment variable.
-path = snapshot_download(repo_id=MODEL_ID, cache_dir="./models")
-print("Model snapshot downloaded to:", path)
-PY
-```
-
-After downloading
-
-- Place or point your scripts to the downloaded model path (for example `models/<MODEL_ID>`).
 
 ## Wan2.2 repository and running the generator
 
