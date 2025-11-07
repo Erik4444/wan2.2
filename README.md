@@ -128,9 +128,9 @@ pip install -r wan2.2/requirements.txt
 sbatch run-t2v.sh --prompt <Your-prompt-here> 
 ```
 
-5. To watch the output:
+5. To watch the logs:
 
 ```
-tail -f output/wan-t2v-<jobID>.log
+tail -f logs/wan-t2v-<jobID>.log
 ```
 ---
