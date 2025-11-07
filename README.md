@@ -25,6 +25,8 @@ source .venv/bin/activate
 
 3. Load modules:
 
+Palma needs to be told which modules it should load so Python and CUDA is available.
+
 ```
 module purge
 module load palma/2022a
@@ -126,4 +128,8 @@ pip install -r wan2.2/requirements.txt
 sbatch run-t2v.sh
 ```
 
+5. To watch the output:
+
+```
+tail -f output/wan-t2v-<jobID>.log
 ---
