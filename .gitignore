@@ -15,6 +15,9 @@ parts/
 *.whl
 wan2.2/
 Wan2.2-TI2V-5B/
+logs/
+outputs/*
+prompts/*
 
 # Virtualenvs
 .venv/
@@ -28,10 +31,6 @@ ENV/
 
 # Logs
 *.log
-logs/
-
-outputs/*
-prompts/*
 
 # Model weights and caches
 models/
