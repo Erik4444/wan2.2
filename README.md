@@ -4,7 +4,7 @@ This repository contains a small project scaffold and helper scripts. This READM
 
 ## Quick overview
 
-- Repository root: `wan`
+- Repository root: `wan2.2`
 - Example script: `run-t2v.sh`
 
 ## Install
@@ -12,8 +12,8 @@ This repository contains a small project scaffold and helper scripts. This READM
 1. Clone the repository:
 
 ```bash
-git clone <repo-url> wan
-cd wan
+git clone <repo-url>
+cd wan2.2
 ```
 
 2. Create and activate a virtual environment (recommended):
@@ -50,7 +50,6 @@ mkdir -p models
 cd models
 # Clone the model repository (requires git-lfs for large files)
 git clone https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
-cd -
 ```
 
 - Or use the HF CLI repo helpers (if available in your huggingface-hub version):
