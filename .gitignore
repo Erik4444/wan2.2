@@ -30,7 +30,7 @@ ENV/
 logs/
 
 outputs/
-
+prompts/
 
 # Model weights and caches
 models/
