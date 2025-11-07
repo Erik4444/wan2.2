@@ -4,7 +4,7 @@ This repository contains a small project scaffold and helper scripts. This READM
 
 ## Quick overview
 
-- Repository root: `wan2.2`
+- Repository root: `wan`
 - Example script: `run-t2v.sh`
 
 ## Install
@@ -12,8 +12,8 @@ This repository contains a small project scaffold and helper scripts. This READM
 1. Clone the repository:
 
 ```bash
-git clone <repo-url> wan2.2
-cd wan2.2
+git clone <repo-url> wan
+cd wan
 ```
 
 2. Create and activate a virtual environment (recommended):
