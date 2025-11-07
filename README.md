@@ -13,7 +13,7 @@ This repository contains a small project scaffold and helper scripts. This READM
 
 ```bash
 git clone <repo-url> wan2.2
-cd wan
+cd wan2.2
 ```
 
 2. Create and activate a virtual environment (recommended):
