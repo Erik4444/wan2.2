@@ -30,8 +30,8 @@ ENV/
 *.log
 logs/
 
-outputs/
-prompts/
+outputs/*
+prompts/*
 
 # Model weights and caches
 models/
