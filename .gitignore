@@ -34,6 +34,7 @@ outputs/
 
 # Model weights and caches
 models/
+Wan2.2-TI2V-5B/
 weights/
 *.ckpt
 *.pt
