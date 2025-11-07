@@ -125,11 +125,12 @@ pip install -r wan2.2/requirements.txt
 4. Run the wrapper script to generate videos:
 
 ```bash
-sbatch run-t2v.sh
+sbatch run-t2v.sh --prompt <Your-prompt-here> 
 ```
 
 5. To watch the output:
 
 ```
 tail -f output/wan-t2v-<jobID>.log
+```
 ---
