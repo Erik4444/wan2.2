@@ -21,6 +21,7 @@ T5_CPU="false"
 OFFLOAD_MODEL="true"
 CKPT_DIR="./Wan2.2-TI2V-5B"
 TASK="ti2v-5B"
+INIT_IMAGE=""
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -28,6 +29,8 @@ while [[ $# -gt 0 ]]; do
       shift; PROMPT="${1:-}"; shift || true ;;
     --prompt-file)
       shift; PROMPT_FILE="${1:-}"; shift || true ;;
+    --image)
+      shift; INIT_IMAGE="${1:-}"; shift || true ;;
     --size)
       shift; SIZE="${1:-}"; shift || true ;;
     --sample-steps|--steps)
@@ -46,7 +49,7 @@ while [[ $# -gt 0 ]]; do
       shift; TASK="${1:-}"; shift || true ;;
     -h|--help)
       echo "Usage: sbatch $0 [--prompt \"text\" | --prompt-file file.txt] [--name filename] [--size WxH] [--sample-steps N] [--guide-scale F]"
-      echo "       Optional: --save-file PATH --t5-cpu --no-offload --ckpt-dir PATH --task ti2v-5B"
+      echo "       Optional: --save-file PATH --t5-cpu --no-offload --ckpt-dir PATH --task ti2v-5B --image PATH"
       exit 0 ;;
     *)
       echo "Unknown argument: $1" >&2; exit 2 ;;
@@ -65,6 +68,14 @@ fi
 if [[ -z "$PROMPT" ]]; then
   echo "❌ No prompt provided. Use --prompt \"...\" or --prompt-file path.txt" >&2
   exit 1
+fi
+
+# Validate init image if provided
+if [[ -n "$INIT_IMAGE" ]]; then
+  if [[ ! -f "$INIT_IMAGE" ]]; then
+    echo "❌ Image file not found: $INIT_IMAGE" >&2
+    exit 1
+  fi
 fi
 
 # Determine output filename
@@ -94,6 +105,7 @@ echo "▶ T5 on CPU:       $T5_CPU"
 echo "▶ Checkpoints dir: $CKPT_DIR"
 echo "▶ Save file:       $SAVE_FILE"
 echo "▶ Prompt length:   ${#PROMPT} chars"
+[[ -n "$INIT_IMAGE" ]] && echo "▶ Init image:      $INIT_IMAGE"
 
 ### -------- RUN --------
 PY_ARGS=(
@@ -111,6 +123,7 @@ PY_ARGS=(
 # Optional flags
 [[ "$OFFLOAD_MODEL" == "true" ]] && PY_ARGS+=( --offload_model True )
 [[ "$T5_CPU" == "true" ]] && PY_ARGS+=( --t5_cpu )
+[[ -n "$INIT_IMAGE" ]] && PY_ARGS+=( --image "$INIT_IMAGE" )
 
 mkdir -p ./outputs
 python "${PY_ARGS[@]}"
